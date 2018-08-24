@@ -16,7 +16,7 @@ def concurrent_sleep(identifier):
 
 def main_threaded():
     for n in range(4):
-        t = Thread(target=concurrent_socket_talk, args=(n,))
+        t = Thread(target=concurrent_sleep, args=(n,))
         t.start()
 
 if __name__ == '__main__':
